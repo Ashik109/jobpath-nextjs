@@ -1,0 +1,312 @@
+[
+  {
+    "source": "about.html",
+    "route": "/about",
+    "component": "about"
+  },
+  {
+    "source": "blog-1.html",
+    "route": "/blog-1",
+    "component": "blog-1"
+  },
+  {
+    "source": "blog-2.html",
+    "route": "/blog-2",
+    "component": "blog-2"
+  },
+  {
+    "source": "blog-3.html",
+    "route": "/blog-3",
+    "component": "blog-3"
+  },
+  {
+    "source": "blog-4.html",
+    "route": "/blog-4",
+    "component": "blog-4"
+  },
+  {
+    "source": "blog-details.html",
+    "route": "/blog-details",
+    "component": "blog-details"
+  },
+  {
+    "source": "candidate-1.html",
+    "route": "/candidate-1",
+    "component": "candidate-1"
+  },
+  {
+    "source": "candidate-2.html",
+    "route": "/candidate-2",
+    "component": "candidate-2"
+  },
+  {
+    "source": "candidate-3.html",
+    "route": "/candidate-3",
+    "component": "candidate-3"
+  },
+  {
+    "source": "candidate-4.html",
+    "route": "/candidate-4",
+    "component": "candidate-4"
+  },
+  {
+    "source": "candidate-alerts.html",
+    "route": "/candidate-alerts",
+    "component": "candidate-alerts"
+  },
+  {
+    "source": "candidate-appliedjob.html",
+    "route": "/candidate-appliedjob",
+    "component": "candidate-appliedjob"
+  },
+  {
+    "source": "candidate-dashboard.html",
+    "route": "/candidate-dashboard",
+    "component": "candidate-dashboard"
+  },
+  {
+    "source": "candidate-deleteprofile.html",
+    "route": "/candidate-deleteprofile",
+    "component": "candidate-deleteprofile"
+  },
+  {
+    "source": "candidate-details-1.html",
+    "route": "/candidate-details-1",
+    "component": "candidate-details-1"
+  },
+  {
+    "source": "candidate-details-2.html",
+    "route": "/candidate-details-2",
+    "component": "candidate-details-2"
+  },
+  {
+    "source": "candidate-follow.html",
+    "route": "/candidate-follow",
+    "component": "candidate-follow"
+  },
+  {
+    "source": "candidate-meeting.html",
+    "route": "/candidate-meeting",
+    "component": "candidate-meeting"
+  },
+  {
+    "source": "candidate-message.html",
+    "route": "/candidate-message",
+    "component": "candidate-message"
+  },
+  {
+    "source": "candidate-passwordchange.html",
+    "route": "/candidate-passwordchange",
+    "component": "candidate-passwordchange"
+  },
+  {
+    "source": "candidate-profile.html",
+    "route": "/candidate-profile",
+    "component": "candidate-profile"
+  },
+  {
+    "source": "candidate-resume.html",
+    "route": "/candidate-resume",
+    "component": "candidate-resume"
+  },
+  {
+    "source": "candidate-shortlist.html",
+    "route": "/candidate-shortlist",
+    "component": "candidate-shortlist"
+  },
+  {
+    "source": "contact-1.html",
+    "route": "/contact-1",
+    "component": "contact-1"
+  },
+  {
+    "source": "contact-2.html",
+    "route": "/contact-2",
+    "component": "contact-2"
+  },
+  {
+    "source": "employer-1.html",
+    "route": "/employer-1",
+    "component": "employer-1"
+  },
+  {
+    "source": "employer-2.html",
+    "route": "/employer-2",
+    "component": "employer-2"
+  },
+  {
+    "source": "employer-3.html",
+    "route": "/employer-3",
+    "component": "employer-3"
+  },
+  {
+    "source": "employer-dash-alert.html",
+    "route": "/employer-dash-alert",
+    "component": "employer-dash-alert"
+  },
+  {
+    "source": "employer-dash-deleteprofile.html",
+    "route": "/employer-dash-deleteprofile",
+    "component": "employer-dash-deleteprofile"
+  },
+  {
+    "source": "employer-dash-job.html",
+    "route": "/employer-dash-job",
+    "component": "employer-dash-job"
+  },
+  {
+    "source": "employer-dash-jobpost.html",
+    "route": "/employer-dash-jobpost",
+    "component": "employer-dash-jobpost"
+  },
+  {
+    "source": "employer-dash-list.html",
+    "route": "/employer-dash-list",
+    "component": "employer-dash-list"
+  },
+  {
+    "source": "employer-dash-meeting.html",
+    "route": "/employer-dash-meeting",
+    "component": "employer-dash-meeting"
+  },
+  {
+    "source": "employer-dash-message.html",
+    "route": "/employer-dash-message",
+    "component": "employer-dash-message"
+  },
+  {
+    "source": "employer-dash-package.html",
+    "route": "/employer-dash-package",
+    "component": "employer-dash-package"
+  },
+  {
+    "source": "employer-dash-passwordchange.html",
+    "route": "/employer-dash-passwordchange",
+    "component": "employer-dash-passwordchange"
+  },
+  {
+    "source": "employer-dash-profile.html",
+    "route": "/employer-dash-profile",
+    "component": "employer-dash-profile"
+  },
+  {
+    "source": "employer-dash-shortlist.html",
+    "route": "/employer-dash-shortlist",
+    "component": "employer-dash-shortlist"
+  },
+  {
+    "source": "employer-dashboard.html",
+    "route": "/employer-dashboard",
+    "component": "employer-dashboard"
+  },
+  {
+    "source": "employer-details-1.html",
+    "route": "/employer-details-1",
+    "component": "employer-details-1"
+  },
+  {
+    "source": "employer-details-2.html",
+    "route": "/employer-details-2",
+    "component": "employer-details-2"
+  },
+  {
+    "source": "employer-job-price.html",
+    "route": "/employer-job-price",
+    "component": "employer-job-price"
+  },
+  {
+    "source": "faq.html",
+    "route": "/faq",
+    "component": "faq"
+  },
+  {
+    "source": "index-2.html",
+    "route": "/home-two",
+    "component": "home-two"
+  },
+  {
+    "source": "index-3.html",
+    "route": "/home-three",
+    "component": "home-three"
+  },
+  {
+    "source": "index-4.html",
+    "route": "/home-four",
+    "component": "home-four"
+  },
+  {
+    "source": "index-5.html",
+    "route": "/home-five",
+    "component": "home-five"
+  },
+  {
+    "source": "index-6.html",
+    "route": "/home-six",
+    "component": "home-six"
+  },
+  {
+    "source": "index.html",
+    "route": "/",
+    "component": "home-one"
+  },
+  {
+    "source": "job-details-1.html",
+    "route": "/job-details-1",
+    "component": "job-details-1"
+  },
+  {
+    "source": "job-details-2.html",
+    "route": "/job-details-2",
+    "component": "job-details-2"
+  },
+  {
+    "source": "job-details-3.html",
+    "route": "/job-details-3",
+    "component": "job-details-3"
+  },
+  {
+    "source": "job-details-4.html",
+    "route": "/job-details-4",
+    "component": "job-details-4"
+  },
+  {
+    "source": "job-list-1.html",
+    "route": "/job-list-1",
+    "component": "job-list-1"
+  },
+  {
+    "source": "job-list-2.html",
+    "route": "/job-list-2",
+    "component": "job-list-2"
+  },
+  {
+    "source": "job-list-3.html",
+    "route": "/job-list-3",
+    "component": "job-list-3"
+  },
+  {
+    "source": "job-list-4.html",
+    "route": "/job-list-4",
+    "component": "job-list-4"
+  },
+  {
+    "source": "job-list-5.html",
+    "route": "/job-list-5",
+    "component": "job-list-5"
+  },
+  {
+    "source": "pricing.html",
+    "route": "/pricing",
+    "component": "pricing"
+  },
+  {
+    "source": "privacy.html",
+    "route": "/privacy",
+    "component": "privacy"
+  },
+  {
+    "source": "tos.html",
+    "route": "/tos",
+    "component": "tos"
+  }
+]

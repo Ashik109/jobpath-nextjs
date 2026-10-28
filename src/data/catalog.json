@@ -1,0 +1,1846 @@
+{
+  "job": {
+    "senior-ui-designer-apple": {
+      "kind": "job",
+      "slug": "senior-ui-designer-apple",
+      "title": "Senior UI Designer, Apple",
+      "image": "/assets/img/home-1/company/apple.svg",
+      "location": "Newyork, USA",
+      "category": "Design",
+      "company": "Apple",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "user interface",
+        "web ui"
+      ],
+      "description": "Join Apple as a Senior UI Designer. Work with a collaborative team to deliver thoughtful, high-quality projects and develop your professional skills.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "senior-ux-designer-google": {
+      "kind": "job",
+      "slug": "senior-ux-designer-google",
+      "title": "Senior UX Designer, Google",
+      "image": "/assets/img/home-1/company/google.svg",
+      "location": "Newyork, USA",
+      "category": "Design",
+      "company": "Google",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "user interface",
+        "web ui"
+      ],
+      "description": "Join Google as a Senior UX Designer. Work with a collaborative team to deliver thoughtful, high-quality projects and develop your professional skills.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "software-engineer-apple": {
+      "kind": "job",
+      "slug": "software-engineer-apple",
+      "title": "Software Engineer, Apple",
+      "image": "/assets/img/home-1/company/microsoft.svg",
+      "location": "Newyork, USA",
+      "category": "Development",
+      "company": "Apple",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "user interface",
+        "web ui"
+      ],
+      "description": "Join Apple as a Software Engineer. Work with a collaborative team to deliver thoughtful, high-quality projects and develop your professional skills.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "web-developer-upwork": {
+      "kind": "job",
+      "slug": "web-developer-upwork",
+      "title": "Web developer, Upwork",
+      "image": "/assets/img/home-1/company/upwork.svg",
+      "location": "Newyork, USA",
+      "category": "Development",
+      "company": "Upwork",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "user interface",
+        "web ui"
+      ],
+      "description": "Join Upwork as a Web developer. Work with a collaborative team to deliver thoughtful, high-quality projects and develop your professional skills.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "digital-marketing-facebook": {
+      "kind": "job",
+      "slug": "digital-marketing-facebook",
+      "title": "Digital Marketing, Facebook",
+      "image": "/assets/img/home-1/company/facebook.svg",
+      "location": "Newyork, USA",
+      "category": "Marketing",
+      "company": "Facebook",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "user interface",
+        "web ui"
+      ],
+      "description": "Join Facebook as a Digital Marketing. Work with a collaborative team to deliver thoughtful, high-quality projects and develop your professional skills.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "software-engineer-bing": {
+      "kind": "job",
+      "slug": "software-engineer-bing",
+      "title": "Software Engineer, Bing",
+      "image": "/assets/img/home-1/company/microsoft.svg",
+      "location": "Newyork, USA",
+      "category": "Development",
+      "company": "Bing",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "React",
+        "javascript",
+        "web ui"
+      ],
+      "description": "Join Bing as a Software Engineer. Work with a collaborative team to deliver thoughtful, high-quality projects and develop your professional skills.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "senior-ux-designer-apple": {
+      "kind": "job",
+      "slug": "senior-ux-designer-apple",
+      "title": "Senior UX Designer, Apple",
+      "image": "/assets/img/home-1/company/apple.svg",
+      "location": "Newyork, USA",
+      "category": "Design",
+      "company": "Apple",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "user interface",
+        "web ui"
+      ],
+      "description": "Join Apple as a Senior UX Designer. Work with a collaborative team to deliver thoughtful, high-quality projects and develop your professional skills.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "graphic-designer-linkedin": {
+      "kind": "job",
+      "slug": "graphic-designer-linkedin",
+      "title": "Graphic Designer, Linkedin",
+      "image": "/assets/img/home-1/company/in.svg",
+      "location": "Newyork, USA",
+      "category": "Design",
+      "company": "Linkedin",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "user interface",
+        "web ui"
+      ],
+      "description": "Join Linkedin as a Graphic Designer. Work with a collaborative team to deliver thoughtful, high-quality projects and develop your professional skills.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "online-trainer-udemy": {
+      "kind": "job",
+      "slug": "online-trainer-udemy",
+      "title": "Online Trainer, Udemy",
+      "image": "/assets/img/home-1/company/udemy.svg",
+      "location": "Newyork, USA",
+      "category": "Career Advice",
+      "company": "Udemy",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "user interface",
+        "web ui"
+      ],
+      "description": "Join Udemy as a Online Trainer. Work with a collaborative team to deliver thoughtful, high-quality projects and develop your professional skills.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "product-designer-figma": {
+      "kind": "job",
+      "slug": "product-designer-figma",
+      "title": "Product Designer, Figma",
+      "image": "/assets/img/home-1/company/figma.svg",
+      "location": "Newyork, USA",
+      "category": "Design",
+      "company": "Figma",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Skill",
+        "user interface",
+        "Problem Solving"
+      ],
+      "description": "Join Figma as a Product Designer. Work with a collaborative team to deliver thoughtful, high-quality projects and develop your professional skills.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "digital-marketer-apple": {
+      "kind": "job",
+      "slug": "digital-marketer-apple",
+      "title": "Digital Marketer, Apple",
+      "image": "/assets/img/home-1/company/apple.svg",
+      "location": "Atlanta, USA",
+      "category": "Marketing",
+      "company": "Apple",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Marketing",
+        "Selling",
+        "Selling"
+      ],
+      "description": "Join Apple as a Digital Marketer. Work with a collaborative team to deliver thoughtful, high-quality projects and develop your professional skills.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "digital-marketer-linkedin": {
+      "kind": "job",
+      "slug": "digital-marketer-linkedin",
+      "title": "Digital Marketer, Linkedin",
+      "image": "/assets/img/home-1/company/facebook.svg",
+      "location": "Atlanta, USA",
+      "category": "Marketing",
+      "company": "Linkedin",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Marketing",
+        "Selling"
+      ],
+      "description": "Join Linkedin as a Digital Marketer. Work with a collaborative team to deliver thoughtful, high-quality projects and develop your professional skills.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "instructor-udemy": {
+      "kind": "job",
+      "slug": "instructor-udemy",
+      "title": "Instructor, Udemy",
+      "image": "/assets/img/home-1/company/udemy.svg",
+      "location": "Atlanta, USA",
+      "category": "Career Advice",
+      "company": "Udemy",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Marketing",
+        "Learning",
+        "Selling"
+      ],
+      "description": "Join Udemy as a Instructor. Work with a collaborative team to deliver thoughtful, high-quality projects and develop your professional skills.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "software-engineer-google": {
+      "kind": "job",
+      "slug": "software-engineer-google",
+      "title": "Software Engineer, Google",
+      "image": "/assets/img/home-1/company/google.svg",
+      "location": "Newyork, USA",
+      "category": "Development",
+      "company": "Google",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "React",
+        "javascript",
+        "web ui"
+      ],
+      "description": "Join Google as a Software Engineer. Work with a collaborative team to deliver thoughtful, high-quality projects and develop your professional skills.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "senior-ui-designer-bing": {
+      "kind": "job",
+      "slug": "senior-ui-designer-bing",
+      "title": "Senior UI Designer, Bing",
+      "image": "/assets/img/home-1/company/microsoft.svg",
+      "location": "Newyork, USA",
+      "category": "Design",
+      "company": "Bing",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "user interface",
+        "web ui"
+      ],
+      "description": "Join Bing as a Senior UI Designer. Work with a collaborative team to deliver thoughtful, high-quality projects and develop your professional skills.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "digital-marketer-amazon": {
+      "kind": "job",
+      "slug": "digital-marketer-amazon",
+      "title": "Digital Marketer, Amazon",
+      "image": "/assets/img/home-1/company/amazon.svg",
+      "location": "Atlanta, USA",
+      "category": "Marketing",
+      "company": "Amazon",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Marketing",
+        "Selling"
+      ],
+      "description": "Join Amazon as a Digital Marketer. Work with a collaborative team to deliver thoughtful, high-quality projects and develop your professional skills.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "software-engineer-in": {
+      "kind": "job",
+      "slug": "software-engineer-in",
+      "title": "Software Engineer, In",
+      "image": "/assets/img/home-1/company/in.svg",
+      "location": "Newyork, USA",
+      "category": "Development",
+      "company": "In",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "user interface",
+        "Python"
+      ],
+      "description": "Join In as a Software Engineer. Work with a collaborative team to deliver thoughtful, high-quality projects and develop your professional skills.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "data-analysis-amazon": {
+      "kind": "job",
+      "slug": "data-analysis-amazon",
+      "title": "Data Analysis, Amazon",
+      "image": "/assets/img/home-1/company/amazon.svg",
+      "location": "Newyork, USA",
+      "category": "Career Advice",
+      "company": "Amazon",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "user interface",
+        "web ui"
+      ],
+      "description": "Join Amazon as a Data Analysis. Work with a collaborative team to deliver thoughtful, high-quality projects and develop your professional skills.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "senior-ux-designer-microsoft": {
+      "kind": "job",
+      "slug": "senior-ux-designer-microsoft",
+      "title": "Senior UX Designer, Microsoft",
+      "image": "/assets/img/home-1/company/microsoft.svg",
+      "location": "Newyork, USA",
+      "category": "Design",
+      "company": "Microsoft",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "user interface",
+        "web ui"
+      ],
+      "description": "Join Microsoft as a Senior UX Designer. Work with a collaborative team to deliver thoughtful, high-quality projects and develop your professional skills.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "product-manager-medium": {
+      "kind": "job",
+      "slug": "product-manager-medium",
+      "title": "Product Manager, Medium",
+      "image": "/assets/img/home-1/company/medium.svg",
+      "location": "Newyork, USA",
+      "category": "Career Advice",
+      "company": "Medium",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Product Strategy",
+        "Product Testing"
+      ],
+      "description": "Join Medium as a Product Manager. Work with a collaborative team to deliver thoughtful, high-quality projects and develop your professional skills.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    }
+  },
+  "employer": {
+    "upwork-com": {
+      "kind": "employer",
+      "slug": "upwork-com",
+      "title": "Upwork.com",
+      "image": "/assets/img/home-1/company/upwork.svg",
+      "location": "Newyork, USA",
+      "category": "Freelancing Platform",
+      "company": "Upwork.com",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "Collaboration",
+        "Freelancing Platform"
+      ],
+      "description": "Upwork.com connects talented people with opportunities in freelancing platform. Learn about our team, working culture, and current openings.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 20
+    },
+    "microsoft-com": {
+      "kind": "employer",
+      "slug": "microsoft-com",
+      "title": "Microsoft.com",
+      "image": "/assets/img/home-1/company/microsoft.svg",
+      "location": "Newyork, USA",
+      "category": "Development",
+      "company": "Microsoft.com",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "Collaboration",
+        "Development"
+      ],
+      "description": "Microsoft.com connects talented people with opportunities in development. Learn about our team, working culture, and current openings.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 25
+    },
+    "linkedin-ltd": {
+      "kind": "employer",
+      "slug": "linkedin-ltd",
+      "title": "Linkedin Ltd",
+      "image": "/assets/img/home-1/company/in.svg",
+      "location": "Antarion, USA",
+      "category": "Development",
+      "company": "Linkedin Ltd",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "Collaboration",
+        "Development"
+      ],
+      "description": "Linkedin Ltd connects talented people with opportunities in development. Learn about our team, working culture, and current openings.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 30
+    },
+    "apple-com": {
+      "kind": "employer",
+      "slug": "apple-com",
+      "title": "Apple.com",
+      "image": "/assets/img/home-1/company/apple.svg",
+      "location": "Antarion, USA",
+      "category": "Software Engineer",
+      "company": "Apple.com",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "Collaboration",
+        "Software Engineer"
+      ],
+      "description": "Apple.com connects talented people with opportunities in software engineer. Learn about our team, working culture, and current openings.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 28
+    },
+    "facebook-com": {
+      "kind": "employer",
+      "slug": "facebook-com",
+      "title": "Facebook.com",
+      "image": "/assets/img/home-1/company/facebook.svg",
+      "location": "Antarion, USA",
+      "category": "Development",
+      "company": "Facebook.com",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "Collaboration",
+        "Development"
+      ],
+      "description": "Facebook.com connects talented people with opportunities in development. Learn about our team, working culture, and current openings.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 30
+    },
+    "amazon-com": {
+      "kind": "employer",
+      "slug": "amazon-com",
+      "title": "Amazon.com",
+      "image": "/assets/img/home-1/company/amazon.svg",
+      "location": "Ontario, Canada",
+      "category": "Web Development",
+      "company": "Amazon.com",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "Collaboration",
+        "Web Development"
+      ],
+      "description": "Amazon.com connects talented people with opportunities in web development. Learn about our team, working culture, and current openings.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 30
+    },
+    "google-com": {
+      "kind": "employer",
+      "slug": "google-com",
+      "title": "Google.com",
+      "image": "/assets/img/home-1/company/google.svg",
+      "location": "Ontario, Canada",
+      "category": "Web Development",
+      "company": "Google.com",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "Collaboration",
+        "Web Development"
+      ],
+      "description": "Google.com connects talented people with opportunities in web development. Learn about our team, working culture, and current openings.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 25
+    },
+    "figma-com": {
+      "kind": "employer",
+      "slug": "figma-com",
+      "title": "Figma.com",
+      "image": "/assets/img/home-1/company/figma.svg",
+      "location": "Hacker street, USA",
+      "category": "Web Development",
+      "company": "Figma.com",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "Collaboration",
+        "Web Development"
+      ],
+      "description": "Figma.com connects talented people with opportunities in web development. Learn about our team, working culture, and current openings.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 30
+    },
+    "udemy-com": {
+      "kind": "employer",
+      "slug": "udemy-com",
+      "title": "Udemy.Com",
+      "image": "/assets/img/home-1/company/udemy.svg",
+      "location": "Hacker street, USA",
+      "category": "Edtech Academy",
+      "company": "Udemy.Com",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "Collaboration",
+        "Edtech Academy"
+      ],
+      "description": "Udemy.Com connects talented people with opportunities in edtech academy. Learn about our team, working culture, and current openings.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 30
+    },
+    "linkedin-com": {
+      "kind": "employer",
+      "slug": "linkedin-com",
+      "title": "Linkedin.com",
+      "image": "/assets/img/home-1/company/in.svg",
+      "location": "Newyork, USA",
+      "category": "Ui/UX Design",
+      "company": "Linkedin.com",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "Collaboration",
+        "Ui/UX Design"
+      ],
+      "description": "Linkedin.com connects talented people with opportunities in ui/ux design. Learn about our team, working culture, and current openings.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 20
+    }
+  },
+  "candidate": {
+    "al-amin-bali": {
+      "kind": "candidate",
+      "slug": "al-amin-bali",
+      "title": "Al Amin Bali",
+      "image": "/assets/img/author/1.svg",
+      "location": "Newyork, USA",
+      "category": "UX Designer",
+      "company": "Jobpath Partners",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Figma",
+        "Photoshop"
+      ],
+      "description": "Al Amin Bali is a UX Designer with experience delivering projects in multidisciplinary teams. Explore skills, experience, and professional interests below.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "jonathon-doe": {
+      "kind": "candidate",
+      "slug": "jonathon-doe",
+      "title": "Jonathon Doe",
+      "image": "/assets/img/author/2.svg",
+      "location": "Newyork, USA",
+      "category": "UX Designer",
+      "company": "Jobpath Partners",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Figma",
+        "Photoshop"
+      ],
+      "description": "Jonathon Doe is a UX Designer with experience delivering projects in multidisciplinary teams. Explore skills, experience, and professional interests below.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "jack-alexander": {
+      "kind": "candidate",
+      "slug": "jack-alexander",
+      "title": "Jack Alexander",
+      "image": "/assets/img/author/3.svg",
+      "location": "Newyork, USA",
+      "category": "UX Designer",
+      "company": "Jobpath Partners",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Figma",
+        "Photoshop"
+      ],
+      "description": "Jack Alexander is a UX Designer with experience delivering projects in multidisciplinary teams. Explore skills, experience, and professional interests below.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "oliver-josef": {
+      "kind": "candidate",
+      "slug": "oliver-josef",
+      "title": "Oliver Josef",
+      "image": "/assets/img/author/4.svg",
+      "location": "Newyork, USA",
+      "category": "Web Developer",
+      "company": "Jobpath Partners",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Figma",
+        "Photoshop"
+      ],
+      "description": "Oliver Josef is a Web Developer with experience delivering projects in multidisciplinary teams. Explore skills, experience, and professional interests below.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "emma-roy": {
+      "kind": "candidate",
+      "slug": "emma-roy",
+      "title": "Emma Roy",
+      "image": "/assets/img/author/6.svg",
+      "location": "Newyork, USA",
+      "category": "Graphics Designer",
+      "company": "Jobpath Partners",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Figma",
+        "Photoshop"
+      ],
+      "description": "Emma Roy is a Graphics Designer with experience delivering projects in multidisciplinary teams. Explore skills, experience, and professional interests below.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "elizabeth": {
+      "kind": "candidate",
+      "slug": "elizabeth",
+      "title": "Elizabeth",
+      "image": "/assets/img/home-2/author/4.svg",
+      "location": "Newyork, USA",
+      "category": "UX Designer",
+      "company": "Jobpath Partners",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Figma",
+        "Photoshop"
+      ],
+      "description": "Elizabeth is a UX Designer with experience delivering projects in multidisciplinary teams. Explore skills, experience, and professional interests below.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "addison-bekar": {
+      "kind": "candidate",
+      "slug": "addison-bekar",
+      "title": "Addison Bekar",
+      "image": "/assets/img/home-2/author/4.svg",
+      "location": "Newyork, USA",
+      "category": "Produc t Manager",
+      "company": "Jobpath Partners",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "User Interface"
+      ],
+      "description": "Addison Bekar is a Produc t Manager with experience delivering projects in multidisciplinary teams. Explore skills, experience, and professional interests below.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "michael-roy": {
+      "kind": "candidate",
+      "slug": "michael-roy",
+      "title": "Michael Roy",
+      "image": "/assets/img/author/1.svg",
+      "location": "Newyork, USA",
+      "category": "Software Engineer",
+      "company": "Jobpath Partners",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "web ui"
+      ],
+      "description": "Michael Roy is a Software Engineer with experience delivering projects in multidisciplinary teams. Explore skills, experience, and professional interests below.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "anastacia-alice": {
+      "kind": "candidate",
+      "slug": "anastacia-alice",
+      "title": "Anastacia Alice",
+      "image": "/assets/img/author/8.svg",
+      "location": "Newyork, USA",
+      "category": "Software Engineer",
+      "company": "Jobpath Partners",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "web ui"
+      ],
+      "description": "Anastacia Alice is a Software Engineer with experience delivering projects in multidisciplinary teams. Explore skills, experience, and professional interests below.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "esrat-sultana": {
+      "kind": "candidate",
+      "slug": "esrat-sultana",
+      "title": "Esrat Sultana",
+      "image": "/assets/img/author/7.svg",
+      "location": "Bangladesh, Dhaka",
+      "category": "Wp Developer",
+      "company": "Jobpath Partners",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Wordpress",
+        "Ajax"
+      ],
+      "description": "Esrat Sultana is a Wp Developer with experience delivering projects in multidisciplinary teams. Explore skills, experience, and professional interests below.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "kakon-matabbar": {
+      "kind": "candidate",
+      "slug": "kakon-matabbar",
+      "title": "Kakon Matabbar",
+      "image": "/assets/img/home-2/author/1.svg",
+      "location": "Newyork, USA",
+      "category": "Blockchain Dev",
+      "company": "Jobpath Partners",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "NFT",
+        "Airdrops"
+      ],
+      "description": "Kakon Matabbar is a Blockchain Dev with experience delivering projects in multidisciplinary teams. Explore skills, experience, and professional interests below.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    }
+  },
+  "blog": {
+    "7-ways-job-post-has-improved-business-today": {
+      "kind": "blog",
+      "slug": "7-ways-job-post-has-improved-business-today",
+      "title": "7 Ways Job Post Has Improved Business Today",
+      "image": "/assets/img/home-1/blog/1.webp",
+      "location": "Newyork, USA",
+      "category": "Career Advice",
+      "company": "Jobpath Partners",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "Collaboration",
+        "Career Advice"
+      ],
+      "description": "Practical career advice on 7 ways job post has improved business today. Explore clear steps to build your skills, strengthen your applications, and make confident career decisions.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "start-an-online-job-and-work-from-home": {
+      "kind": "blog",
+      "slug": "start-an-online-job-and-work-from-home",
+      "title": "Start an online Job and work from home",
+      "image": "/assets/img/home-1/blog/2.webp",
+      "location": "Newyork, USA",
+      "category": "Career Advice",
+      "company": "Jobpath Partners",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "Collaboration",
+        "Career Advice"
+      ],
+      "description": "Practical career advice on start an online job and work from home. Explore clear steps to build your skills, strengthen your applications, and make confident career decisions.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "insider-strategies-for-success-on-job-websites": {
+      "kind": "blog",
+      "slug": "insider-strategies-for-success-on-job-websites",
+      "title": "Insider Strategies for Success on Job Websites",
+      "image": "/assets/img/home-1/blog/3.webp",
+      "location": "Newyork, USA",
+      "category": "Career Advice",
+      "company": "Jobpath Partners",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "Collaboration",
+        "Career Advice"
+      ],
+      "description": "Practical career advice on insider strategies for success on job websites. Explore clear steps to build your skills, strengthen your applications, and make confident career decisions.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "expert-tips-for-mastering-job-websites-dream-job": {
+      "kind": "blog",
+      "slug": "expert-tips-for-mastering-job-websites-dream-job",
+      "title": "Expert Tips for Mastering Job Websites Dream Job",
+      "image": "/assets/img/pages/blog-1/4.webp",
+      "location": "Newyork, USA",
+      "category": "Career Advice",
+      "company": "Jobpath Partners",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "Collaboration",
+        "Career Advice"
+      ],
+      "description": "Practical career advice on expert tips for mastering job websites dream job. Explore clear steps to build your skills, strengthen your applications, and make confident career decisions.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "how-to-negotiate-salary-with-your-employer": {
+      "kind": "blog",
+      "slug": "how-to-negotiate-salary-with-your-employer",
+      "title": "How to Negotiate Salary with Your Employer",
+      "image": "/assets/img/pages/blog-1/5.webp",
+      "location": "Newyork, USA",
+      "category": "Career Advice",
+      "company": "Jobpath Partners",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "Collaboration",
+        "Career Advice"
+      ],
+      "description": "Practical career advice on how to negotiate salary with your employer. Explore clear steps to build your skills, strengthen your applications, and make confident career decisions.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "want-to-work-in-one-of-the-world-s-new-careers": {
+      "kind": "blog",
+      "slug": "want-to-work-in-one-of-the-world-s-new-careers",
+      "title": "Want to Work in One of The World’s New Careers",
+      "image": "/assets/img/pages/blog-1/6.webp",
+      "location": "Newyork, USA",
+      "category": "Career Advice",
+      "company": "Jobpath Partners",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "Collaboration",
+        "Career Advice"
+      ],
+      "description": "Practical career advice on want to work in one of the world’s new careers. Explore clear steps to build your skills, strengthen your applications, and make confident career decisions.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "6-job-opportunities-to-consider-in-the-freight-and-logistics-industry": {
+      "kind": "blog",
+      "slug": "6-job-opportunities-to-consider-in-the-freight-and-logistics-industry",
+      "title": "6 Job Opportunities to Consider in the Freight and Logistics Industry",
+      "image": "/assets/img/home-6/blog.webp",
+      "location": "Newyork, USA",
+      "category": "Career Advice",
+      "company": "Jobpath Partners",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "Collaboration",
+        "Career Advice"
+      ],
+      "description": "Practical career advice on 6 job opportunities to consider in the freight and logistics industry. Explore clear steps to build your skills, strengthen your applications, and make confident career decisions.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "navigating-the-new-world-exploring-modern-job-trends-and-careers-in-the-digital-age": {
+      "kind": "blog",
+      "slug": "navigating-the-new-world-exploring-modern-job-trends-and-careers-in-the-digital-age",
+      "title": "Navigating the New World: Exploring Modern Job Trends and Careers in the Digital Age",
+      "image": "/assets/img/icon/calender-black.svg",
+      "location": "Newyork, USA",
+      "category": "Career Advice",
+      "company": "Jobpath Partners",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "Collaboration",
+        "Career Advice"
+      ],
+      "description": "Practical career advice on navigating the new world: exploring modern job trends and careers in the digital age. Explore clear steps to build your skills, strengthen your applications, and make confident career decisions.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    },
+    "empowering-through-trust-key-principles-for-unlocking-employee-potential": {
+      "kind": "blog",
+      "slug": "empowering-through-trust-key-principles-for-unlocking-employee-potential",
+      "title": "Empowering Through Trust: Key Principles for Unlocking Employee Potential",
+      "image": "/assets/img/icon/calender-black.svg",
+      "location": "Newyork, USA",
+      "category": "Career Advice",
+      "company": "Jobpath Partners",
+      "employmentType": "Full Time",
+      "salary": "$1,000 – $2,000 / month",
+      "experience": "2–5 years",
+      "date": "20 March 2022",
+      "author": "Jon Adom",
+      "tags": [
+        "Creative",
+        "Collaboration",
+        "Career Advice"
+      ],
+      "description": "Practical career advice on empowering through trust: key principles for unlocking employee potential. Explore clear steps to build your skills, strengthen your applications, and make confident career decisions.",
+      "responsibilities": [
+        "Collaborate with the team to plan and deliver projects.",
+        "Communicate progress and share constructive feedback.",
+        "Maintain quality and document your work.",
+        "Continue learning and improving your professional skills."
+      ],
+      "requirements": [
+        "Relevant experience or a strong portfolio.",
+        "Clear communication and problem-solving skills.",
+        "Ability to collaborate and manage priorities."
+      ],
+      "benefits": [
+        "Professional development opportunities",
+        "Supportive team culture",
+        "Flexible working arrangements"
+      ],
+      "openJobs": 0
+    }
+  }
+}

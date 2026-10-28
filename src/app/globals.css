@@ -1,0 +1,18 @@
+/* Application overrides for the original Jobpath styles. */
+html { scroll-behavior: auto; }
+body { overflow-x: hidden; }
+.jobpath-filtered-out { display: none !important; }
+.jobpath-notice { position: fixed; bottom: 24px; right: 24px; z-index: 11000; max-width: min(440px, calc(100vw - 48px)); padding: 18px 48px 18px 20px; background: #163b25; color: #fff; border-radius: 12px; box-shadow: 0 8px 32px #0003; }
+.jobpath-notice button { position: absolute; right: 14px; top: 12px; color: #fff; background: none; border: 0; font-size: 24px; }
+.jobpath-mobile-nav details { border-bottom: 1px solid #e7e7e7; padding: 12px 20px; }
+.jobpath-mobile-nav summary { cursor: pointer; font-weight: 600; }
+.jobpath-mobile-nav a { display: block; padding: 10px 12px; }
+select.select-nice { display: block; border: 0; min-height: 32px; background: transparent; color: inherit; padding-right: 28px; cursor: pointer; max-width: 100%; }
+.jobpath-saved-records img { object-fit: contain; }
+[id] { scroll-margin-top: 110px; }
+html:not([data-aos-ready]) [data-aos] { opacity: 1 !important; transform: none !important; }
+@media (prefers-reduced-motion: reduce) {
+  [data-aos] { opacity: 1 !important; transform: none !important; transition: none !important; }
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
