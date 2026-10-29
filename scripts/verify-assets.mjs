@@ -3,8 +3,17 @@ import path from "node:path";
 
 function files(dir) { return fs.readdirSync(dir, { withFileTypes: true }).flatMap(entry => entry.isDirectory() ? files(path.join(dir, entry.name)) : [path.join(dir, entry.name)]); }
 const authored = [...files("src"), ...files("public")];
-const html = authored.filter(file => /\.html?$/i.test(file));
+// The standalone template showcase is intentionally served as static HTML.
+const landingPage = path.join("public", "landing", "index.html");
+const html = authored.filter(file => /\.html?$/i.test(file) && file !== landingPage);
 const missing = new Set();
+if (!fs.existsSync(landingPage)) missing.add(landingPage);
+else {
+  const content = fs.readFileSync(landingPage, "utf8");
+  for (const match of content.matchAll(/(?:src|href)\s*=\s*["']?(assets\/[^\s"'<>]+)/g)) {
+    if (!fs.existsSync(path.resolve(path.dirname(landingPage), match[1]))) missing.add(`${landingPage}: ${match[1]}`);
+  }
+}
 for (const file of files("src").filter(file => /\.(tsx|json)$/.test(file))) {
   const content = fs.readFileSync(file, "utf8");
   for (const match of content.matchAll(/["'](\/assets\/[^"'\s]+)["']/g)) if (!fs.existsSync(path.join("public", match[1]))) missing.add(match[1]);

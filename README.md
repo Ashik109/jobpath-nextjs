@@ -16,6 +16,7 @@ On Windows PowerShell, use `npm.cmd` if script execution is disabled.
 ## Routes and content
 
 - Home layouts: `/home-one` through `/home-six`; `/` opens home one.
+- Template showcase: `/landing/index.html`, served from `public/landing` with its own assets.
 - Listings: `/job-list-1`–`/job-list-5`, `/employer-1`–`/employer-3`, `/candidate-1`–`/candidate-4`, `/blog-1`–`/blog-4`.
 - Details: `/job/[slug]`, `/employer/[slug]`, `/candidate/[slug]`, `/blog/[slug]`.
 - Alternate detail layouts accept the same slugs, for example `/job-details-3/software-engineer-apple` and `/candidate-details-2/michael-roy`.
@@ -36,7 +37,7 @@ npm run build
 npm run test:e2e
 ```
 
-Browser tests use installed Google Chrome and start the production build on port 3127. Run the build before tests. Generated Next.js output may contain HTML; authored source and public assets contain no HTML files.
+Browser tests use installed Google Chrome and start the production build on port 3127. Run the build before tests. App pages use React; the standalone template showcase at `public/landing/index.html` is the only allowed authored HTML file in source/public assets.
 
 Dashboard behavior is implemented in `src/lib/dashboard.ts`. Candidate and employer dashboards support local search, category filtering, pagination, record previews, sample record title editing/removal, profile validation, additional profile fields, resume saving, recipient-specific message drafts, and job/meeting drafts. Job drafts can be reviewed, edited and deleted from My Job. Sample records and analytics remain demonstration data. Profile/resume section removals and saved additional fields survive reload. Files are selected for the current session only; file upload/storage, message delivery, job publication, account deletion/password changes and billing require backend integrations. The account deletion preview preserves browser drafts, and Cancel returns to the appropriate dashboard.
 
