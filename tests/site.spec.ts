@@ -67,7 +67,8 @@ test("listing sorting, pagination and record-specific detail data", async ({ pag
   await results.getByRole("navigation", { name: "Results pagination" }).getByRole("link", { name: "2", exact: true }).click();
   await expect(page).toHaveURL(/page=2/);
   await expect(results.locator("#grid .job__title").first()).not.toHaveText(first!);
-  await results.getByLabel("Sort results").selectOption("title-desc");
+  await results.locator('.nice-select[aria-label="Sort results"]').click();
+  await results.getByRole("option", { name: "Name: Z–A", exact: true }).click();
   const expected = Object.values(catalog.job).sort((a, b) => b.title.localeCompare(a.title))[0];
   await expect(results.locator("#grid .job__title").first()).toHaveText(expected.title);
   await results.locator("#grid .job__title a").first().click();

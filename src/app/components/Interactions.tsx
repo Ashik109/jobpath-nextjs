@@ -3,6 +3,8 @@
 import { Suspense, useEffect, useRef, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { notify } from "@/lib/saved-records";
+import { initializeDashboard } from "@/lib/dashboard";
+import "./dashboard.css";
 
 type Control = HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement;
 const normalize = (text: string) => text.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
@@ -32,13 +34,18 @@ function InteractionController() {
     return () => { window.removeEventListener("jobpath:notice", notice); if (timer.current) clearTimeout(timer.current); };
   }, []);
 
+  useEffect(() => initializeDashboard(pathname, url => router.push(url)), [pathname, router]);
+
   useEffect(() => {
     let draft: Record<string, string> = {};
     try { draft = JSON.parse(localStorage.getItem(`jobpath:draft:${pathname}`) || "{}"); } catch {}
     const controls = document.querySelectorAll<Control>(".dash__content input, .dash__content textarea, .dash__content select");
     controls.forEach((control, i) => {
       const value = draft[control.id || control.name || `field-${i}`];
-      if (value !== undefined && !(control instanceof HTMLInputElement && ["password", "file"].includes(control.type))) control.value = value;
+      if (value !== undefined && !(control instanceof HTMLInputElement && ["password", "file"].includes(control.type))) {
+        control.value = value;
+        if (control instanceof HTMLSelectElement) control.dispatchEvent(new Event("change", { bubbles: true }));
+      }
     });
   }, [pathname]);
 

@@ -1,0 +1,6 @@
+.dash__content [hidden] { display: none !important; }
+.jobpath-dashboard-dialog { width: min(560px, calc(100vw - 32px)); max-height: 85vh; padding: 28px; border: 1px solid #ddd; border-radius: 16px; }
+.jobpath-dashboard-dialog::backdrop { background: rgb(0 0 0 / 45%); }
+.jobpath-dashboard-dialog p { overflow-wrap: anywhere; }
+.dash__content .rts__pagination [aria-current="page"] { background: #198754; color: white; }
+.single__chat__person { cursor: pointer; }

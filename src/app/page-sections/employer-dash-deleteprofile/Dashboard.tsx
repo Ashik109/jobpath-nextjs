@@ -244,7 +244,7 @@ Please Enter Your Login Password
                     </div>
                   </div>
                   <div className={"d-flex justify-content-end gap-30"}>
-                    <button className={"cancel__buttonh rts__btn gray__btn"}>
+                    <button type={"button"} className={"cancel__buttonh rts__btn gray__btn"}>
 Cancel
                     </button>
                     <button type={"submit"} className={"rts__btn fill__btn"}>

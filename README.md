@@ -35,3 +35,13 @@ npm run test:e2e
 ```
 
 Browser tests use installed Google Chrome and start the production build on port 3127. Run the build before tests. Generated Next.js output may contain HTML; authored source and public assets contain no HTML files.
+
+Dashboard behavior is implemented in `src/lib/dashboard.ts`. Candidate and employer dashboards support local search, category filtering, pagination, record previews, sample record title editing/removal, profile validation, additional profile fields, resume saving, recipient-specific message drafts, and job/meeting drafts. Job drafts can be reviewed, edited and deleted from My Job. Sample records and analytics remain demonstration data. Profile/resume section removals and saved additional fields survive reload. Files are selected for the current session only; file upload/storage, message delivery, job publication, account deletion/password changes and billing require backend integrations. The account deletion preview preserves browser drafts, and Cancel returns to the appropriate dashboard.
+
+Run `npx playwright test tests/dashboard.spec.ts` after building for dashboard route, interaction, persistence and mobile sidebar coverage.
+
+Slider initialization is in `src/lib/sliders.ts`. Controls are scoped to their own section, loop buffers preserve the original card layout, and pagination represents the original items. Slider tests check all 62 template routes at 390, 820, 1440 and 1920 pixels, plus autoplay, dragging, resizing and navigation between pages.
+
+All select fields use the original jQuery Nice Select plugin and template CSS. `NiceSelectController` initializes new controls and removes widgets on route changes; native select values remain available to React handlers, form validation, search and saved profile drafts. The dependency override shares the project's jQuery 3.7.1 instead of installing the plugin's older jQuery dependency.
+
+Counters animate once when they enter the viewport through `src/lib/counters.ts`. The original spans, classes and number suffixes are preserved. Animations cancel on route changes and display final values immediately for reduced-motion preferences.

@@ -1,3 +1,4 @@
+import { testimonials } from "@/data/slider-content";
 export default function Section7() {
   return (
     <div className={"rts__section section__padding "}>
@@ -19,7 +20,8 @@ From entry-level positions to executive roles browse through.
             <div className={"col-lg-9"}>
               <div className={"rts__testimonial__four position-relative overflow-hidden"}>
                 <div className={"swiper-wrapper"}>
-                  <div className={"swiper-slide"}>
+{testimonials.map(item => (
+<div className={"swiper-slide"} key={item.id}>
                     <div className={"rts__single__testimonial style__four "}>
                       <div className={"testimonial__content"}>
                         <div className={"rts__rating mb-30 justify-content-center d-flex gap-2"}>
@@ -39,27 +41,25 @@ From entry-level positions to executive roles browse through.
 
                           </i>
                         </div>
-                        <h5 className={"testimonial__text fw-medium"}>
-I can't recommend The Gourmet Haven enough. It's a place for special occasions, date nights, or whenever you're in the mood for a culinary adventure of any kind.
-                                            
-                        </h5>
+                        <h5 className={"testimonial__text fw-medium"}>{item.quote}</h5>
                         <div className={"d-flex gap-4 mt-40 justify-content-center align-items-center mx-auto max-content"}>
                           <div className={"author__image"}>
-                            <img className={""} src={"/assets/img/hom-4/testimonial/author-1.svg"} alt={""} />
+                            <img className={""} src={item.image} alt={""} />
                           </div>
                           <div className={"author__content"}>
                             <span className={"font-20 fw-semibold"}>
-Alexander Joy
+{item.name}
                             </span>
                             <p>
-Web Developer
+{item.role}
                             </p>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
+))}
+</div>
               </div>
             </div>
             <div className={"rts__slider__control is__home__four__testimonial d-none d-lg-flex z-3 w-100 justify-content-between g-0 position-absolute top-50  translate-middle-y"}>

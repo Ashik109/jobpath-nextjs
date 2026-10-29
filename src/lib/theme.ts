@@ -1,30 +1,14 @@
-import type SwiperType from "swiper";
-import type { SwiperOptions } from "swiper/types";
+import { mountSliders } from "./sliders";
+import { mountCounters } from "./counters";
 
 export async function mountTheme(signal: AbortSignal) {
-  const [{ default: Swiper }, modules, bootstrap] = await Promise.all([
-    import("swiper"), import("swiper/modules"), import("bootstrap"),
-  ]);
+  const bootstrap = await import("bootstrap");
   if (signal.aborted) return () => {};
   const abort = new AbortController();
   const eventOptions = { signal: abort.signal };
-  const swipers: SwiperType[] = [];
   const cleanups: (() => void)[] = [];
-  const sliders = document.querySelectorAll<HTMLElement>(".swiper-data, .rts__testimonial__four");
-  sliders.forEach(element => {
-    const options: SwiperOptions = element.dataset.swiper ? JSON.parse(element.dataset.swiper) : { slidesPerView: 1, autoplay: { delay: 5000 }, navigation: { nextEl: ".rts__slide__next", prevEl: ".rts__slide__prev" } };
-    const slides = element.querySelectorAll(":scope > .swiper-wrapper > .swiper-slide").length;
-    const maximumSlides = Math.max(Number(options.slidesPerView) || 1, ...Object.values(options.breakpoints || {}).map(option => Number(option.slidesPerView) || 1));
-    // Loop only when the source has enough slides at every viewport size.
-    options.loop = Boolean(options.loop && slides > maximumSlides);
-    swipers.push(new Swiper(element, {
-      modules: [modules.Navigation, modules.Pagination, modules.Autoplay, modules.EffectFade, modules.Thumbs, modules.FreeMode],
-      spaceBetween: 30,
-      ...options,
-      observer: true,
-      observeParents: true,
-    }));
-  });
+  cleanups.push(mountSliders(signal));
+  cleanups.push(mountCounters(signal));
 
   const onScroll = () => {
     document.querySelectorAll(".rts__header").forEach(el => el.classList.toggle("sticky", window.scrollY > 100));
@@ -111,7 +95,6 @@ export async function mountTheme(signal: AbortSignal) {
     if (cleaned) return;
     cleaned = true;
     abort.abort();
-    swipers.forEach(swiper => swiper.destroy(true, true));
     cleanups.forEach(dispose => dispose());
     document.querySelectorAll(".modal, .offcanvas").forEach(el => {
       const modal = el.classList.contains("modal");

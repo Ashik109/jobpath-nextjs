@@ -1,3 +1,5 @@
+import { getDetails } from "@/data/details";
+const blogs = getDetails("blog").slice(0, 3);
 import Link from "next/link";
 
 export default function Section6() {
@@ -30,31 +32,20 @@ Breaking News &amp; Current Events
         </div>
         <div className={"swiper-data blog__slider overflow-hidden"} data-swiper={"\n            {\"slidesPerView\": 1, \n            \"loop\": true,\n            \"speed\": 1000,\n            \"autoplay\":{\n                \"delay\":\"7000\"\n            },\n            \"navigation\": {\n                \"nextEl\": \".rts__slide__next\",\n                \"prevEl\": \".rts__slide__prev\"\n            }\n        }\n            "}>
           <div className={"swiper-wrapper"}>
-            <div className={"swiper-slide"}>
+{blogs.map(item => (
+<div className={"swiper-slide"} key={item.slug}>
               <div className={"blog__content d-flex flex-wrap flex-xl-nowrap gap-5 align-items-center"}>
                 <div className={"blog__thumb"}>
-                  <Link href={"/blog/start-an-online-job-and-work-from-home"} className={"blog__thumbnail"} prefetch={false}>
-                    <img className={"rounded-2 w-50"} src={"/assets/img/home-2/blog/1.jpg"} alt={""} />
+                  <Link href={`/blog/${item.slug}`} className={"blog__thumbnail"} prefetch={false}>
+                    <img className={"rounded-2 w-50"} src={item.image} alt={""} />
                   </Link>
                 </div>
                 <div className={"blog__content__meta"}>
                   <a href={"#"} className={"category d-block"}>
 Business
                   </a>
-                  <Link href={"/blog/start-an-online-job-and-work-from-home"} className={"blog__title l--3 h3"} prefetch={false}>
-
-                                    Job Tips How to Become a
-                                    Business Man to Intelligence
-                                    Analystin 6 Simple Steps
-                                
-                  </Link>
-                  <p className={"mt-4"}>
-Whether you're an experienced professional or a fresh graduate eager 
-                                    to dive into the workforce, we have something for everyone. From tech 
-                                    wizards to marketing mavens, finance gurus to creative minds, our diverse 
-                                    range of listings caters to a variety of skills and interests.
-                                
-                  </p>
+                  <Link href={`/blog/${item.slug}`} className={"blog__title l--3 h3"} prefetch={false}>{item.title}</Link>
+                  <p className={"mt-4"}>{item.description}</p>
                   <div className={"blog__author mt-40 d-flex gap-3 align-items-center"}>
                     <div className={"author__img"}>
                       <img className={"rounded-5"} src={"/assets/img/home-2/author/1.svg"} alt={""} />
@@ -71,7 +62,8 @@ March 14, 2024
                 </div>
               </div>
             </div>
-          </div>
+))}
+</div>
         </div>
       </div>
     </div>

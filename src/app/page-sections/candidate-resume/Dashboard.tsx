@@ -214,16 +214,16 @@ export default function Dashboard() {
                 <a className={"nav-link active"} href={"#info"}>
 CV File
                 </a>
-                <a className={"nav-link "} href={"#social"}>
+                <a className={"nav-link "} href={"#education"}>
 Education
                 </a>
-                <a className={"nav-link"} href={"#address"}>
+                <a className={"nav-link"} href={"#education-1"}>
 Skills &amp; Experience
                 </a>
-                <a className={"nav-link"} href={"#address"}>
+                <a className={"nav-link"} href={"#education-2"}>
 Portfolio 
                 </a>
-                <a className={"nav-link"} href={"#address"}>
+                <a className={"nav-link"} href={"#education-3"}>
 Award
                 </a>
               </div>
