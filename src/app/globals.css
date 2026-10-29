@@ -6,9 +6,52 @@ body { overflow-x: hidden; }
 .jobpath-filtered-out { display: none !important; }
 .jobpath-notice { position: fixed; bottom: 24px; right: 24px; z-index: 11000; max-width: min(440px, calc(100vw - 48px)); padding: 18px 48px 18px 20px; background: #163b25; color: #fff; border-radius: 12px; box-shadow: 0 8px 32px #0003; }
 .jobpath-notice button { position: absolute; right: 14px; top: 12px; color: #fff; background: none; border: 0; font-size: 24px; }
-.jobpath-mobile-nav details { border-bottom: 1px solid #e7e7e7; padding: 12px 20px; }
-.jobpath-mobile-nav summary { cursor: pointer; font-weight: 600; }
-.jobpath-mobile-nav a { display: block; padding: 10px 12px; }
+/* Use the original Jobpath MeanMenu styles with accessible React toggles. */
+.jobpath-mobile-nav .mean-nav ul { display: flow-root; }
+.jobpath-mobile-nav .mean-nav .jobpath-mobile-label {
+  display: block;
+  float: left;
+  width: 90%;
+  margin: 0;
+  padding: 10px 15px;
+  border: 0;
+  border-top: 1px solid rgba(125, 128, 135, .3);
+  background: transparent;
+  color: var(--rts-heading);
+  font: inherit;
+  text-align: left;
+  text-transform: capitalize;
+}
+.jobpath-mobile-nav .mean-nav .navigation__menu--item > .jobpath-mobile-label { font-size: 16px; font-weight: 500; }
+.jobpath-mobile-nav .mean-nav ul ul li .jobpath-mobile-label { width: 80%; padding: 0; margin: 5px 0; opacity: .75; }
+.jobpath-mobile-nav .mean-nav button.mean-expand {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 30px;
+  height: auto;
+  margin-top: 1px;
+  padding: 5px 15px;
+  border: 0;
+  background: transparent;
+  color: var(--rts-heading);
+  font: inherit;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+.jobpath-mobile-nav .mean-nav :is(a, button):focus-visible { outline: 2px solid var(--rts-button-1); outline-offset: -2px; }
+.jobpath-mobile-submenu {
+  display: grid;
+  grid-template-rows: 0fr;
+  clear: both;
+  visibility: hidden;
+  opacity: 0;
+  transition: grid-template-rows 280ms ease, opacity 280ms ease, visibility 280ms;
+}
+.jobpath-mobile-submenu.is-open { grid-template-rows: 1fr; visibility: visible; opacity: 1; }
+.jobpath-mobile-submenu > div { min-height: 0; overflow: hidden; }
 .nice-select.form-select { background-image: none; }
 .info__field .nice-select.form-select { line-height: 1.5; float: none; }
 .nice-select .list { max-height: 280px; overflow-y: auto; overscroll-behavior: contain; }
@@ -17,6 +60,39 @@ body { overflow-x: hidden; }
 .jobpath-saved-records img { object-fit: contain; }
 [id] { scroll-margin-top: 110px; }
 html:not([data-aos-ready]) [data-aos] { opacity: 1 !important; transform: none !important; }
+
+/* Keep hover-in and hover-out consistent across the original theme variants. */
+html:root {
+  --hover-duration: 280ms;
+  --hover-easing: cubic-bezier(.2, .65, .3, 1);
+  --transition: all var(--hover-duration) var(--hover-easing);
+}
+
+html body :is(
+  a, button, summary, .file-upload__label, .file-upload__label__two,
+  .single__cat, .rts__job__card, .rts__job__card__big,
+  .rts__author__card, .rts__author__card__big, .rts__single__employer,
+  .rts__pricing__box, .pricing__style__three, .rts__single__blog,
+  .rts__workprocess__box, .single__notification, .single__chat__person
+) {
+  transition-property: color, background-color, border-color, box-shadow, opacity, transform, border-radius;
+  transition-duration: var(--hover-duration);
+  transition-timing-function: var(--hover-easing);
+  transition-delay: 0s;
+}
+
+/* Animate the nested colors alongside their card or action button. */
+html body :is(
+  .single__cat, .rts__job__card, .rts__job__card__big,
+  .rts__author__card, .rts__author__card__big, .rts__single__employer,
+  .rts__pricing__box, .pricing__style__three, .rts__workprocess__box,
+  .dash__menu, .action, .meeting__action, .shortlist__action, .delete__icon
+) :where(div, span, i, h4, h5, h6, svg path) {
+  transition-property: color, background-color, border-color, fill, stroke;
+  transition-duration: var(--hover-duration);
+  transition-timing-function: var(--hover-easing);
+}
+
 @media (prefers-reduced-motion: reduce) {
   [data-aos] { opacity: 1 !important; transform: none !important; transition: none !important; }
   html { scroll-behavior: auto; }

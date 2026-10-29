@@ -158,13 +158,38 @@ test("mobile menu navigates through React routes", async ({ page }) => {
   await page.locator('header button[data-bs-target="#offcanvas"]').click();
   await expect(page.locator("#offcanvas")).toBeVisible();
   await page.locator(".jobpath-mobile-nav").getByText("Home", { exact: true }).click();
-  await page.locator(".jobpath-mobile-nav").getByRole("link", { name: "Home 2", exact: true }).click();
+  await page.locator(".jobpath-mobile-nav").getByRole("link", { name: "Home Two", exact: true }).click();
   await expect(page).toHaveURL("/home-two");
   await page.waitForFunction(() => document.body.dataset.themeReady === "/home-two");
   await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(0);
   await expect(page.locator(".offcanvas-backdrop")).toHaveCount(0);
   await page.screenshot({ path: "test-results/home-mobile.png", fullPage: false, animations: "disabled" });
   expect(errors).toEqual([]);
+});
+
+test("original mobile menu hierarchy supports nested toggles and keyboard navigation", async ({ page }) => {
+  for (const width of [360, 390, 820]) {
+    await page.setViewportSize({ width, height: 900 });
+    await page.goto("/job-list-1");
+    await page.waitForFunction(() => document.body.dataset.themeReady === "/job-list-1");
+    await page.locator('header button[data-bs-target="#offcanvas"]').click();
+    const menu = page.getByRole("navigation", { name: "Mobile navigation" });
+    await expect(menu.locator(":scope > ul > li > .jobpath-mobile-label")).toHaveText(["Home", "Browse Jobs", "Employers", "Candidates", "Pages", "Contact"]);
+    await expect(menu.getByRole("link", { name: "Job List Five", exact: true })).toBeHidden();
+    await menu.getByRole("button", { name: "Expand Browse Jobs submenu", exact: true }).click();
+    const nested = menu.getByRole("button", { name: "Expand Job List submenu", exact: true });
+    await nested.focus();
+    await page.keyboard.press("Enter");
+    await expect(menu.getByRole("button", { name: "Collapse Job List submenu", exact: true })).toHaveAttribute("aria-expanded", "true");
+    await expect(menu.getByRole("link", { name: "Job List Five", exact: true })).toBeVisible();
+    await menu.getByRole("button", { name: "Collapse Browse Jobs submenu", exact: true }).click();
+    await expect(menu.getByRole("link", { name: "Job List Five", exact: true })).toBeHidden();
+    await menu.getByRole("button", { name: "Expand Browse Jobs submenu", exact: true }).click();
+    await menu.getByRole("link", { name: "Job List Five", exact: true }).click();
+    await expect(page).toHaveURL("/job-list-5");
+    await expect(page.locator(".offcanvas-backdrop")).toHaveCount(0);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  }
 });
 
 test("dashboard charts and chart tabs render", async ({ page }) => {
