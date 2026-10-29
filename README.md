@@ -2,6 +2,8 @@
 
 Next.js App Router conversion of the Jobpath template. Uses TypeScript and the original CSS/SCSS and assets; Tailwind is not installed.
 
+Open [documentation/index.html](documentation/index.html) in a browser for the standalone setup, customization, route, dashboard and testing guide.
+
 ## Run
 
 ```sh

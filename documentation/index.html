@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Setup, customization, routes, dashboard behavior and testing documentation for the Jobpath Next.js project.">
+  <title>Jobpath Next.js — Documentation</title>
+  <style>
+    :root { --green:#238b47; --ink:#172b22; --muted:#5a6c62; --line:#dfe8e1; --paper:#fff; --soft:#f3f8f4; }
+    * { box-sizing:border-box; }
+    html { scroll-padding-top:24px; }
+    body { margin:0; color:var(--ink); background:var(--paper); font:16px/1.75 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    a { color:var(--green); text-underline-offset:3px; }
+    a:hover { color:#145d30; }
+    a:focus-visible,button:focus-visible,summary:focus-visible { outline:3px solid #238b47; outline-offset:4px; }
+    .skip { position:fixed; top:8px; left:8px; padding:8px 16px; background:white; z-index:5; transform:translateY(-160%); }
+    .skip:focus { transform:none; }
+    .sidebar { position:fixed; inset:0 auto 0 0; width:270px; overflow-y:auto; padding:32px 24px; background:var(--soft); border-right:1px solid var(--line); }
+    .brand { display:flex; align-items:center; gap:10px; color:var(--ink); text-decoration:none; font-size:25px; font-weight:750; letter-spacing:-1px; }
+    .brand span { display:grid; place-items:center; width:38px; height:38px; color:white; background:var(--green); border-radius:50%; font-size:24px; }
+    .eyebrow { margin:16px 0 22px; color:var(--muted); text-transform:uppercase; font-size:11px; font-weight:700; letter-spacing:1.8px; }
+    nav a { display:block; padding:6px 12px; margin:2px 0; border-radius:6px; color:#42594b; text-decoration:none; font-size:14px; }
+    nav a:hover { background:#e1eee4; color:#145d30; }
+    nav a[aria-current="location"] { color:#145d30; background:#dceee1; font-weight:650; }
+    .sidebar-footer { margin-top:24px; padding-top:20px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+    main { max-width:1230px; margin-left:270px; padding:64px 64px 32px; }
+    .hero { padding-bottom:36px; border-bottom:1px solid var(--line); }
+    .tag { display:inline-block; padding:4px 10px; border:1px solid #c6e4ce; border-radius:5px; background:var(--soft); color:#21643a; font-size:12px; font-weight:650; }
+    h1,h2,h3 { line-height:1.25; letter-spacing:-.6px; }
+    h1 { font-size:clamp(34px,4vw,52px); margin:18px 0 16px; }
+    h2 { font-size:28px; margin:0 0 20px; }
+    h3 { font-size:19px; margin:28px 0 10px; letter-spacing:-.2px; }
+    p { margin:12px 0; }
+    .lead { max-width:680px; color:var(--muted); font-size:18px; }
+    .meta { display:flex; flex-wrap:wrap; gap:8px; margin-top:24px; }
+    .meta span { padding:4px 12px; background:var(--soft); border-radius:20px; font-size:12px; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:24px; }
+    .actions a,.actions button { padding:9px 16px; border:1px solid var(--line); border-radius:7px; background:white; color:var(--ink); text-decoration:none; font:600 13px/1.5 system-ui,sans-serif; cursor:pointer; }
+    .actions a { background:var(--green); border-color:var(--green); color:white; }
+    section { padding-top:44px; scroll-margin-top:16px; }
+    .section-label { display:block; margin-bottom:8px; color:var(--green); font-size:12px; letter-spacing:1px; font-weight:700; }
+    .grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin:24px 0; }
+    .card { padding:20px; border:1px solid var(--line); border-radius:10px; }
+    .card strong { display:block; font-size:27px; line-height:1.3; }
+    .card span { color:var(--muted); font-size:13px; }
+    .note { padding:16px 20px; margin:22px 0; border-left:3px solid var(--green); background:var(--soft); border-radius:0 8px 8px 0; }
+    .note p { margin:0; }
+    .table-wrap { overflow-x:auto; margin:18px 0; border:1px solid var(--line); border-radius:9px; }
+    table { width:100%; border-collapse:collapse; text-align:left; font-size:14px; }
+    th,td { padding:13px 16px; border-bottom:1px solid var(--line); vertical-align:top; }
+    th { background:var(--soft); font-weight:650; }
+    tr:last-child td { border-bottom:0; }
+    code,kbd { font-family:Consolas,"SFMono-Regular",monospace; font-size:.87em; }
+    :not(pre)>code { background:#eef4ef; padding:2px 5px; border-radius:4px; overflow-wrap:anywhere; }
+    pre { padding:20px 24px; margin:16px 0; overflow-x:auto; background:#14251c; color:#e4f2e8; border-radius:9px; font-size:14px; line-height:1.8; tab-size:2; }
+    pre code { font-size:inherit; }
+    li { margin:7px 0; }
+    ol,ul { padding-left:24px; }
+    details { margin:12px 0; padding:14px 18px; border:1px solid var(--line); border-radius:8px; }
+    summary { cursor:pointer; font-weight:650; }
+    details p:last-child { margin-bottom:0; }
+    footer { margin-top:48px; padding-top:24px; border-top:1px solid var(--line); color:var(--muted); font-size:13px; }
+    @media (max-width:1050px) { main { padding:40px 32px; } .sidebar { width:235px; padding:24px 16px; } main { margin-left:235px; } }
+    @media (max-width:760px) { .sidebar { position:static; width:auto; padding:24px; border-right:0; border-bottom:1px solid var(--line); } nav { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); } nav a { padding:6px 0; } .eyebrow { margin:12px 0; } .sidebar-footer { display:none; } main { margin:0; padding:32px 22px; } .grid { gap:8px; } .card { padding:14px 10px; } .card strong { font-size:24px; } h2 { font-size:25px; } pre { padding:16px; } }
+    @media (prefers-reduced-motion:no-preference) { nav a { transition:background-color .2s,color .2s; } }
+    @media print { .sidebar,.skip,.actions { display:none; } main { max-width:none; margin:0; padding:0; } body { font-size:11pt; } section { padding-top:24px; } h2,h3 { break-after:avoid; } pre,.card,.note,tr { break-inside:avoid; } pre { white-space:pre-wrap; overflow-wrap:anywhere; background:#f4f4f4; color:#111; border:1px solid #ddd; } .table-wrap { overflow:visible; } a { color:inherit; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to documentation</a>
+  <aside class="sidebar" aria-label="Documentation sidebar">
+    <a class="brand" href="#overview"><span aria-hidden="true">J</span>JobPath</a>
+    <p class="eyebrow">Next.js documentation</p>
+    <nav aria-label="Contents">
+      <a href="#overview">01 · Overview</a>
+      <a href="#setup">02 · Installation</a>
+      <a href="#structure">03 · Project structure</a>
+      <a href="#routes">04 · Pages &amp; routes</a>
+      <a href="#content">05 · Content &amp; search</a>
+      <a href="#dashboard">06 · Dashboard</a>
+      <a href="#storage">07 · Browser storage</a>
+      <a href="#customization">08 · Customization</a>
+      <a href="#navigation">09 · Mobile navigation</a>
+      <a href="#plugins">10 · UI integrations</a>
+      <a href="#testing">11 · Testing</a>
+      <a href="#deployment">12 · Production setup</a>
+      <a href="#troubleshooting">13 · Troubleshooting</a>
+      <a href="#reference">14 · File reference</a>
+    </nav>
+    <div class="sidebar-footer">Project version 0.1.0<br>Next.js 16.4.3 · React 19.3.0<br>Standalone, offline documentation</div>
+  </aside>
+
+  <main id="main">
+    <header class="hero" id="overview">
+      <span class="tag">DEVELOPER GUIDE · v0.1.0</span>
+      <h1>Jobpath Next.js</h1>
+      <p class="lead">Everything you need to run, customize and maintain the Next.js conversion of the Jobpath HTML template.</p>
+      <div class="meta"><span>App Router</span><span>TypeScript</span><span>Bootstrap 5</span><span>Original Jobpath assets</span></div>
+      <div class="actions"><a href="#setup">Start with installation →</a><button type="button" id="print-documentation">Print / Save PDF</button></div>
+    </header>
+
+    <div class="grid" aria-label="Project at a glance">
+      <div class="card"><strong>6</strong><span>Home layouts</span></div>
+      <div class="card"><strong>62</strong><span>Template route entries</span></div>
+      <div class="card"><strong>50</strong><span>Catalog records</span></div>
+    </div>
+    <p>The project preserves the original Jobpath design, fonts, icons and CSS while using React components, Next.js routing and shared interactive controllers. It does not use Tailwind CSS.</p>
+    <div class="note"><p><strong>Current scope:</strong> this is a frontend template with browser-based previews. Authentication, server-side account data, message delivery, file uploads, billing and public job publishing are not connected to production services. Dashboard charts and sample rows are demonstration data.</p></div>
+
+    <section id="setup">
+      <span class="section-label">02 / GET STARTED</span><h2>Installation &amp; commands</h2>
+      <p>Use Node.js <strong>20.9.0 or newer</strong> and npm. The minimum Node version comes from the installed Next.js package. Google Chrome is required for the configured browser tests.</p>
+      <ol>
+        <li>Open a terminal in the <code>jobpath-nextjs</code> project folder.</li>
+        <li>Install the locked dependencies and start the development server.</li>
+      </ol>
+      <pre><code>npm ci
+npm run dev</code></pre>
+      <p>Open <a href="http://localhost:3000">http://localhost:3000</a>. Changes to components and styles update through the development server.</p>
+      <p>On Windows PowerShell, use <code>npm.cmd</code> and <code>npx.cmd</code> if script execution policy blocks the standard commands.</p>
+      <div class="table-wrap"><table><thead><tr><th>Command</th><th>Purpose</th></tr></thead><tbody>
+        <tr><td><code>npm ci</code></td><td>Install the versions recorded in <code>package-lock.json</code>.</td></tr>
+        <tr><td><code>npm run dev</code></td><td>Run the Next.js development server.</td></tr>
+        <tr><td><code>npm run build</code></td><td>Compile and type-check the production application.</td></tr>
+        <tr><td><code>npm run start</code></td><td>Serve the existing production build.</td></tr>
+        <tr><td><code>npm run lint</code></td><td>Run ESLint.</td></tr>
+        <tr><td><code>npm run verify:assets</code></td><td>Check referenced assets and the HTML-free application source convention.</td></tr>
+        <tr><td><code>npm run test:e2e</code></td><td>Run Playwright tests against a production server on port 3127.</td></tr>
+      </tbody></table></div>
+    </section>
+
+    <section id="structure">
+      <span class="section-label">03 / ARCHITECTURE</span><h2>Project structure</h2>
+      <pre><code>jobpath-nextjs/
+├── documentation/index.html       This standalone guide
+├── public/assets/                 Original images, fonts, CSS and vendor assets
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx             Root document, metadata and shared controllers
+│   │   ├── globals.css            Application style overrides
+│   │   ├── page.tsx               Default home page
+│   │   ├── [route]/page.tsx       Route entry points
+│   │   ├── page-sections/         Original layouts split into React sections
+│   │   └── components/            Shared menus, cards and UI controllers
+│   ├── data/                      Catalog, route inventory and slider content
+│   ├── lib/                       Dashboard, theme and persistence behavior
+│   └── types/                     Type declarations for integrations
+├── tests/                         Playwright suites and card fixtures
+├── scripts/verify-assets.mjs       Asset verification
+├── next.config.ts                 Next.js configuration; React Compiler enabled
+├── playwright.config.ts           Browser test configuration
+└── package.json                   Dependencies and scripts</code></pre>
+      <p>A route entry usually imports or re-exports a page layout from <code>src/app/page-sections</code>. Edit the section component to change page content; edit the route file for route-specific metadata or routing behavior.</p>
+      <p>Read <code>AGENTS.md</code> before development. This project requires checking the relevant guides in <code>node_modules/next/dist/docs/</code> before changing Next.js code, because the installed version may differ from older examples.</p>
+    </section>
+
+    <section id="routes">
+      <span class="section-label">04 / PAGE INVENTORY</span><h2>Pages &amp; routes</h2>
+      <p><code>src/data/routes.json</code> lists the 62 converted template entries. Catalog-driven detail URLs add record-specific routes to that inventory.</p>
+      <div class="table-wrap"><table><thead><tr><th>Page family</th><th>Routes</th></tr></thead><tbody>
+        <tr><td>Home</td><td><code>/</code>, <code>/home-one</code> through <code>/home-six</code>. Legacy variants: <code>/index-2</code> through <code>/index-6</code>.</td></tr>
+        <tr><td>Job listings</td><td><code>/job-list-1</code> through <code>/job-list-5</code></td></tr>
+        <tr><td>Employer listings</td><td><code>/employer-1</code> through <code>/employer-3</code></td></tr>
+        <tr><td>Candidate listings</td><td><code>/candidate-1</code> through <code>/candidate-4</code></td></tr>
+        <tr><td>Blog listings</td><td><code>/blog-1</code> through <code>/blog-4</code></td></tr>
+        <tr><td>Record details</td><td><code>/job/[slug]</code>, <code>/employer/[slug]</code>, <code>/candidate/[slug]</code>, <code>/blog/[slug]</code></td></tr>
+        <tr><td>Alternate details</td><td><code>/job-details-1/[slug]</code> through <code>/job-details-4/[slug]</code>; <code>/employer-details-1/[slug]</code> and <code>/employer-details-2/[slug]</code>; <code>/candidate-details-1/[slug]</code> and <code>/candidate-details-2/[slug]</code>; <code>/blog-details/[slug]</code></td></tr>
+        <tr><td>Information</td><td><code>/about</code>, <code>/pricing</code>, <code>/faq</code>, <code>/contact-1</code>, <code>/contact-2</code>, <code>/privacy</code>, <code>/tos</code></td></tr>
+      </tbody></table></div>
+      <h3>Candidate dashboard</h3>
+      <p><code>/candidate-dashboard</code>, <code>/candidate-profile</code>, <code>/candidate-resume</code>, <code>/candidate-appliedjob</code>, <code>/candidate-shortlist</code>, <code>/candidate-message</code>, <code>/candidate-alerts</code>, <code>/candidate-follow</code>, <code>/candidate-meeting</code>, <code>/candidate-passwordchange</code>, <code>/candidate-deleteprofile</code>.</p>
+      <h3>Employer dashboard</h3>
+      <p><code>/employer-dashboard</code>, <code>/employer-dash-profile</code>, <code>/employer-dash-job</code>, <code>/employer-dash-jobpost</code>, <code>/employer-dash-list</code>, <code>/employer-dash-shortlist</code>, <code>/employer-dash-message</code>, <code>/employer-dash-alert</code>, <code>/employer-dash-meeting</code>, <code>/employer-dash-package</code>, <code>/employer-dash-passwordchange</code>, <code>/employer-dash-deleteprofile</code>, <code>/employer-job-price</code>.</p>
+      <p>Example detail URLs: <code>/job/software-engineer-apple</code> and <code>/candidate-details-2/michael-roy</code>. Legacy detail entry routes redirect to a default record; unknown slugs return a 404 page.</p>
+    </section>
+
+    <section id="content">
+      <span class="section-label">05 / DATA</span><h2>Content &amp; search</h2>
+      <p><code>src/data/catalog.json</code> contains 20 jobs, 10 employers, 11 candidates and 9 blog records. <code>src/data/details.ts</code> defines the shared record type and lookup helpers.</p>
+      <ol>
+        <li>Find the record under its kind: <code>job</code>, <code>employer</code>, <code>candidate</code> or <code>blog</code>.</li>
+        <li>Update its title, description, location, tags, image and related fields. When adding a record, copy a complete record of the same kind and keep all required fields.</li>
+        <li>Give new records a unique object key and matching <code>slug</code>. Set <code>kind</code> to the correct record family.</li>
+        <li>Place new assets in <code>public/assets</code> and reference them with a URL such as <code>/assets/img/example.webp</code>.</li>
+        <li>Check listing and detail views, run asset verification, and rebuild for production.</li>
+      </ol>
+      <p>Change default detail records through <code>defaultSlugs</code> in <code>details.ts</code>. Home-page section text and images can also be embedded directly in <code>page-sections</code>; changing the catalog does not automatically replace every home-page element.</p>
+      <h3>Listing URL parameters</h3>
+      <div class="table-wrap"><table><thead><tr><th>Parameter</th><th>Behavior</th></tr></thead><tbody>
+        <tr><td><code>q</code></td><td>Search title, category, description and tags.</td></tr>
+        <tr><td><code>location</code></td><td>Filter by matching location text.</td></tr>
+        <tr><td><code>type</code></td><td>Match the employment type after normalization.</td></tr>
+        <tr><td><code>company</code></td><td>Filter by company text.</td></tr>
+        <tr><td><code>sort</code></td><td><code>default</code>, <code>title</code> or <code>title-desc</code>.</td></tr>
+        <tr><td><code>page</code></td><td>One-based page number; catalog listings show six records per page.</td></tr>
+      </tbody></table></div>
+      <pre><code>/job-list-1?q=engineer&amp;location=New%20York&amp;sort=title&amp;page=1</code></pre>
+      <p>Result rendering is in <code>CatalogResults.tsx</code>. Existing job and employer card structures are maintained in <code>components/original-cards</code>.</p>
+    </section>
+
+    <section id="dashboard">
+      <span class="section-label">06 / ACCOUNT PREVIEWS</span><h2>Dashboard behavior</h2>
+      <p><code>src/lib/dashboard.ts</code> adds dashboard behavior to the original layout through the shared <code>Interactions</code> controller.</p>
+      <div class="table-wrap"><table><thead><tr><th>Feature</th><th>What works now</th><th>Production requirement</th></tr></thead><tbody>
+        <tr><td>Profiles &amp; resume</td><td>Field validation, browser drafts, additional fields and section removals.</td><td>Authenticated profile records and server-side validation.</td></tr>
+        <tr><td>Search &amp; row actions</td><td>Local filtering, pagination, previews, sample title editing and row removal.</td><td>Queries and authorized mutations against real records.</td></tr>
+        <tr><td>Job posts</td><td>Post Job creates a local draft. My Job supports viewing, editing and deleting it.</td><td>Database storage, moderation and public publishing.</td></tr>
+        <tr><td>Messages</td><td>Recipient-specific message drafts, contact search and read/unread filters.</td><td>Message transport, delivery and persistent conversations.</td></tr>
+        <tr><td>Meetings</td><td>Meeting drafts from Recent Applicants, with review and deletion.</td><td>Scheduling, invitations and meeting-provider integration.</td></tr>
+        <tr><td>Shortlist / applications / following</td><td>Browser-saved records and application previews.</td><td>User-owned records and actual employer submissions.</td></tr>
+        <tr><td>CV download</td><td>A text download of a sample candidate profile.</td><td>Stored real CV documents if needed.</td></tr>
+        <tr><td>Files</td><td>Session file selection and supported image previews; dashboard selection checks the 10 MB size limit.</td><td>Validated upload endpoints and file storage.</td></tr>
+        <tr><td>Passwords &amp; account deletion</td><td>Preview notices, password confirmation validation and Cancel navigation.</td><td>Authenticated account services. Passwords are not stored in browser drafts.</td></tr>
+        <tr><td>Packages &amp; charts</td><td>Sample package status, plan notices and chart tabs.</td><td>Payment provider, subscriptions and real analytics.</td></tr>
+      </tbody></table></div>
+      <p>Local job drafts do not appear as publicly published catalog jobs. Local meeting drafts do not send invitations. The Delete Profile preview does not delete an account or clear profile drafts.</p>
+    </section>
+
+    <section id="storage">
+      <span class="section-label">07 / PERSISTENCE</span><h2>Browser storage</h2>
+      <p>Preview data lives in <code>localStorage</code> for the current browser and origin. It survives page reloads but does not synchronize across devices, accounts, browsers or different ports. Clearing site data removes these drafts.</p>
+      <div class="table-wrap"><table><thead><tr><th>Storage key</th><th>Contents</th></tr></thead><tbody>
+        <tr><td><code>jobpath:shortlist</code></td><td>Saved shortlist records.</td></tr>
+        <tr><td><code>jobpath:applications</code></td><td>Local application previews.</td></tr>
+        <tr><td><code>jobpath:following</code></td><td>Followed company records.</td></tr>
+        <tr><td><code>jobpath:draft:&lt;pathname&gt;</code></td><td>Saved form values for a route.</td></tr>
+        <tr><td><code>jobpath:dashboard:jobs</code></td><td>Employer job drafts.</td></tr>
+        <tr><td><code>jobpath:dashboard:meetings:&lt;role&gt;</code></td><td>Meeting drafts separated by account role.</td></tr>
+        <tr><td><code>jobpath:dashboard:&lt;pathname&gt;:…</code></td><td>Additional fields, row edits/removals, read contacts and recipient message drafts.</td></tr>
+      </tbody></table></div>
+      <p>For a targeted reset, open browser Developer Tools → Application → Local Storage, select the app origin and remove only the relevant <code>jobpath:</code> key. Export any drafts you want to keep before deleting them.</p>
+    </section>
+
+    <section id="customization">
+      <span class="section-label">08 / DESIGN</span><h2>Customize the template</h2>
+      <div class="table-wrap"><table><thead><tr><th>Change</th><th>Where to edit</th></tr></thead><tbody>
+        <tr><td>Page layout &amp; copy</td><td><code>src/app/page-sections/&lt;page&gt;/</code></td></tr>
+        <tr><td>Global metadata &amp; favicon</td><td><code>src/app/layout.tsx</code>; route metadata in <code>page.tsx</code> files.</td></tr>
+        <tr><td>Logo, illustrations &amp; photos</td><td><code>public/assets/img/</code> and the referencing section components.</td></tr>
+        <tr><td>Application styling</td><td><code>src/app/globals.css</code>; dashboard additions in <code>src/app/components/dashboard.css</code>.</td></tr>
+        <tr><td>Original theme stylesheet</td><td><code>public/assets/css/style.css</code>; original SCSS under <code>public/assets/scss/</code>.</td></tr>
+        <tr><td>Fonts &amp; icon styles</td><td>Font stylesheet links in <code>layout.tsx</code> and assets under <code>public/assets/fonts/</code>.</td></tr>
+        <tr><td>Slider content</td><td><code>src/data/slider-content.ts</code> and the corresponding page sections.</td></tr>
+      </tbody></table></div>
+      <p>The site loads compiled CSS. There is no Sass build script in <code>package.json</code>; changing SCSS alone does not update the served stylesheet. Use CSS overrides or add a deliberate Sass compilation workflow.</p>
+      <h3>Hover &amp; motion</h3>
+      <p>Shared hover timing is configured through <code>--hover-duration</code> and <code>--hover-easing</code> in <code>globals.css</code>. The current duration is 280 ms. The reduced-motion media query keeps motion minimal when requested by the visitor.</p>
+      <h3>Route scrolling</h3>
+      <p>The root <code>&lt;html&gt;</code> includes <code>data-scroll-behavior="smooth"</code> for Next.js scroll behavior handling. Keep it when using global smooth scrolling. Route lifecycle behavior is managed in <code>ThemeController.tsx</code>.</p>
+    </section>
+
+    <section id="navigation">
+      <span class="section-label">09 / RESPONSIVE MENU</span><h2>Mobile navigation</h2>
+      <p><code>src/app/components/MobileNavigation.tsx</code> reproduces the original Jobpath MeanMenu appearance using React state. It uses the existing theme CSS classes with bordered rows, right-aligned plus/minus toggles and nested submenu levels.</p>
+      <ul>
+        <li>Top-level groups: Home, Browse Jobs, Employers, Candidates, Pages and Contact.</li>
+        <li>Edit the <code>menus</code> array to change labels, destinations or submenu groups.</li>
+        <li>Links use <code>next/link</code>; buttons expose <code>aria-expanded</code> and <code>aria-controls</code>.</li>
+        <li>Closed submenus are inert, so their links cannot receive keyboard focus.</li>
+        <li>The offcanvas shell, logo, account buttons and social links are in <code>page-sections/about/MobileMenu.tsx</code>.</li>
+      </ul>
+      <p>Bootstrap controls the offcanvas panel. The original MeanMenu jQuery script is not initialized for this React menu. Avoid initializing it in parallel, which would duplicate the navigation.</p>
+    </section>
+
+    <section id="plugins">
+      <span class="section-label">10 / SHARED UI</span><h2>UI integrations</h2>
+      <div class="table-wrap"><table><thead><tr><th>Integration</th><th>Responsibility</th><th>Main implementation</th></tr></thead><tbody>
+        <tr><td>Bootstrap</td><td>Modals, tabs, accordions and offcanvas.</td><td><code>src/lib/theme.ts</code></td></tr>
+        <tr><td>Swiper</td><td>Sliders, pagination, navigation and autoplay.</td><td><code>src/lib/sliders.ts</code></td></tr>
+        <tr><td>ApexCharts</td><td>Sample dashboard area charts.</td><td><code>src/lib/theme.ts</code></td></tr>
+        <tr><td>GLightbox</td><td>Image and video previews.</td><td><code>src/lib/theme.ts</code></td></tr>
+        <tr><td>AOS</td><td>Scroll-reveal animations and route refresh.</td><td><code>AosController.tsx</code></td></tr>
+        <tr><td>jQuery Nice Select</td><td>Original select appearance, synchronized with native controls.</td><td><code>NiceSelectController.tsx</code>, <code>src/lib/nice-select.ts</code></td></tr>
+        <tr><td>Counters</td><td>Once-per-visibility number animations.</td><td><code>src/lib/counters.ts</code></td></tr>
+      </tbody></table></div>
+      <p><code>ThemeController</code> initializes and cleans up integrations on route changes. Follow the existing cleanup pattern when adding plugins so event handlers, timers, overlays and instances do not accumulate.</p>
+      <p>The package override for <code>jquery-nice-select</code> shares the project's jQuery dependency. Do not add another jQuery copy or load the legacy <code>public/assets/js/main.js</code> globally alongside the React controllers.</p>
+    </section>
+
+    <section id="testing">
+      <span class="section-label">11 / VERIFICATION</span><h2>Testing &amp; quality checks</h2>
+      <pre><code>npm run lint
+npm run verify:assets
+npm run build
+npm run test:e2e</code></pre>
+      <p>Build before running browser tests. Playwright starts <code>next start</code> on port <strong>3127</strong>, uses installed Google Chrome in headless mode and retains traces for failures. Keep this port free. The test server command uses <code>npm.cmd</code>; change that to <code>npm</code> in <code>playwright.config.ts</code> when running on macOS or Linux.</p>
+      <div class="table-wrap"><table><thead><tr><th>Suite</th><th>Coverage</th></tr></thead><tbody>
+        <tr><td><code>tests/site.spec.ts</code></td><td>Routes, record details, search, saved actions, menus, charts and shared interactions.</td></tr>
+        <tr><td><code>tests/dashboard.spec.ts</code></td><td>Dashboard route initialization, drafts, row actions, validation, downloads and mobile sidebar.</td></tr>
+        <tr><td><code>tests/sliders.spec.ts</code></td><td>Slider layouts, controls, autoplay, drag, resize and route cleanup.</td></tr>
+        <tr><td><code>tests/nice-select.spec.ts</code></td><td>Custom selects, keyboard behavior, form synchronization and lifecycle.</td></tr>
+        <tr><td><code>tests/counters.spec.ts</code></td><td>Counter values, visibility activation, reduced motion and lifecycle.</td></tr>
+      </tbody></table></div>
+      <pre><code># Run one suite
+npx playwright test tests/dashboard.spec.ts
+
+# Run mobile menu coverage
+npx playwright test tests/site.spec.ts --grep "mobile menu"
+
+# Inspect a failed run (replace with the actual trace path)
+npx playwright show-trace test-results/&lt;failed-test&gt;/trace.zip</code></pre>
+      <p>Asset verification scans <code>src</code> and <code>public</code>. This documentation intentionally lives outside those folders, so its HTML file does not violate the application's HTML-free source check.</p>
+    </section>
+
+    <section id="deployment">
+      <span class="section-label">12 / RELEASE</span><h2>Production setup</h2>
+      <p>On a Node.js host, install the locked dependencies, produce a build and run the application server:</p>
+      <pre><code>npm ci
+npm run build
+npm run start -- --port 3000</code></pre>
+      <p>Use the host's process manager and HTTPS routing for the running server. The repository is not configured with <code>output: "export"</code>; do not deploy it by uploading only an HTML file or the <code>public</code> directory.</p>
+      <p>This guide can be opened directly as <code>documentation/index.html</code>. It is not an application route and is not automatically served by Next.js.</p>
+      <h3>Connecting real services</h3>
+      <ol>
+        <li>Add authentication and authorize account-specific reads and changes on the server.</li>
+        <li>Store jobs, profiles, applications, messages and meetings in a database.</li>
+        <li>Replace browser-preview operations with validated server actions or API endpoints.</li>
+        <li>Add file storage, message/email delivery and a payment provider for the relevant features.</li>
+        <li>Replace sample analytics and verify complete user flows against the connected services.</li>
+      </ol>
+      <p>The current frontend preview does not require a configured backend environment file. When adding services, keep private credentials on the server; use <code>NEXT_PUBLIC_</code> only for values intended to be visible in the browser.</p>
+    </section>
+
+    <section id="troubleshooting">
+      <span class="section-label">13 / HELP</span><h2>Troubleshooting</h2>
+      <details open><summary>PowerShell says npm.ps1 cannot be loaded</summary><p>Use <code>npm.cmd run dev</code> or <code>npx.cmd playwright test</code>. This avoids changing the machine's execution policy.</p></details>
+      <details><summary>Production start says no build was found</summary><p>Run <code>npm run build</code> successfully before <code>npm run start</code> or the Playwright suites.</p></details>
+      <details><summary>Playwright cannot find Chrome or start the server</summary><p>The configuration explicitly uses <code>channel: "chrome"</code>. Install Google Chrome, confirm port 3127 is available, and check the platform-specific <code>npm.cmd</code> test-server command.</p></details>
+      <details><summary>A menu or slider initializes twice</summary><p>Check for legacy global scripts or a second plugin initializer. React controllers already manage initialization and cleanup. Do not load the original main.js as an additional application script.</p></details>
+      <details><summary>A selected file disappears after reload</summary><p>File selection is session-only. The browser draft system does not upload or retain the file itself; connect file storage for permanent uploads.</p></details>
+      <details><summary>My draft is missing on another browser or port</summary><p>Local storage belongs to the browser and origin. Development, production and different localhost ports have separate storage. These previews do not synchronize through an account.</p></details>
+      <details><summary>Next.js warns about missing data-scroll-behavior</summary><p>Keep <code>data-scroll-behavior="smooth"</code> on the root <code>&lt;html&gt;</code> in <code>src/app/layout.tsx</code> when global smooth scrolling is enabled.</p></details>
+      <details><summary>An image or font is missing</summary><p>Run <code>npm run verify:assets</code>. Confirm the file exists in <code>public</code> and that application URLs start with <code>/assets/</code>, without the <code>public</code> prefix. Check filename case on case-sensitive hosts.</p></details>
+      <details><summary>Editing an SCSS file has no visual effect</summary><p>The browser loads compiled CSS, and no Sass watcher is configured. Update the served stylesheet or application CSS overrides, or configure a Sass build step.</p></details>
+    </section>
+
+    <section id="reference">
+      <span class="section-label">14 / QUICK REFERENCE</span><h2>Where to make a change</h2>
+      <div class="table-wrap"><table><thead><tr><th>Task</th><th>File</th></tr></thead><tbody>
+        <tr><td>Application shell &amp; document metadata</td><td><code>src/app/layout.tsx</code></td></tr>
+        <tr><td>Mobile menu hierarchy</td><td><code>src/app/components/MobileNavigation.tsx</code></td></tr>
+        <tr><td>Offcanvas shell &amp; social links</td><td><code>src/app/page-sections/about/MobileMenu.tsx</code></td></tr>
+        <tr><td>Global design &amp; motion overrides</td><td><code>src/app/globals.css</code></td></tr>
+        <tr><td>Catalog records &amp; defaults</td><td><code>src/data/catalog.json</code>, <code>src/data/details.ts</code></td></tr>
+        <tr><td>Listing results</td><td><code>src/app/components/CatalogResults.tsx</code></td></tr>
+        <tr><td>Shared interactions &amp; notices</td><td><code>src/app/components/Interactions.tsx</code></td></tr>
+        <tr><td>Dashboard behavior</td><td><code>src/lib/dashboard.ts</code></td></tr>
+        <tr><td>Saved record operations</td><td><code>src/lib/saved-records.ts</code></td></tr>
+        <tr><td>Theme lifecycle &amp; UI integration</td><td><code>src/app/components/ThemeController.tsx</code>, <code>src/lib/theme.ts</code></td></tr>
+        <tr><td>Browser test setup</td><td><code>playwright.config.ts</code></td></tr>
+      </tbody></table></div>
+      <p>Keep this guide aligned with implementation changes. The versions, record counts and feature descriptions above describe the current repository snapshot.</p>
+    </section>
+    <footer>Jobpath Next.js · Project documentation · <a href="#overview">Back to top ↑</a></footer>
+  </main>
+  <script>
+    document.getElementById('print-documentation').addEventListener('click', () => window.print());
+    const links = Array.from(document.querySelectorAll('nav a'));
+    function highlight() {
+      const sections = links.map(link => document.querySelector(link.hash));
+      let current = sections[0];
+      sections.forEach(section => { if (section.getBoundingClientRect().top <= 100) current = section; });
+      links.forEach(link => {
+        if (link.hash === '#' + current.id) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+      });
+    }
+    window.addEventListener('scroll', highlight, { passive: true });
+    highlight();
+  </script>
+</body>
+</html>
