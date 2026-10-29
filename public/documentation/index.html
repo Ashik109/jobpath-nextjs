@@ -132,7 +132,7 @@ npm run dev</code></pre>
     <section id="structure">
       <span class="section-label">03 / ARCHITECTURE</span><h2>Project structure</h2>
       <pre><code>jobpath-nextjs/
-├── documentation/index.html       This standalone guide
+├── public/documentation/index.html This standalone guide
 ├── public/assets/                 Original images, fonts, CSS and vendor assets
 ├── src/
 │   ├── app/
@@ -309,7 +309,7 @@ npx playwright show-trace test-results/&lt;failed-test&gt;/trace.zip</code></pre
 npm run build
 npm run start -- --port 3000</code></pre>
       <p>Use the host's process manager and HTTPS routing for the running server. The repository is not configured with <code>output: "export"</code>; do not deploy it by uploading only an HTML file or the <code>public</code> directory.</p>
-      <p>This guide can be opened directly as <code>documentation/index.html</code>. It is not an application route and is not automatically served by Next.js.</p>
+      <p>This guide can be opened directly as <code>public/documentation/index.html</code> or viewed at <code>/documentation/index.html</code> on the running site. Next.js serves it as a static file from the public folder.</p>
       <h3>Connecting real services</h3>
       <ol>
         <li>Add authentication and authorize account-specific reads and changes on the server.</li>

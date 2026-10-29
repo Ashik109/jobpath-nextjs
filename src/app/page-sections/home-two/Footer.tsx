@@ -95,7 +95,7 @@ Job Package
           <div className={"d-flex align-items-center flex-wrap gap-4 py-4 justify-content-between"}>
             <p className={"text-gray fw-medium "}>
 
-                    Copyright © 2024 All Rights Reserved by jobpath
+                    Copyright © 2026 All Rights Reserved by jobpath
                 
             </p>
             <div className={"rts__social social__two d-flex gap-3 text-white max-content"}>

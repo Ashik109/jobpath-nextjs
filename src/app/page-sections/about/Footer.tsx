@@ -131,7 +131,7 @@ Subscribe
         <div className={"container"}>
           <p className={"text-center fw-medium py-4"}>
 
-                Copyright © 2024 All Rights Reserved by jobpath
+                Copyright © 2026 All Rights Reserved by jobpath
             
           </p>
         </div>

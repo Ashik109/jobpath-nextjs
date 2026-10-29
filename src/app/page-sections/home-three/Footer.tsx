@@ -58,7 +58,7 @@ Subscribe
                 </a>
               </div>
               <p>
-Copyright © 2024 All Rights Reserved by 
+Copyright © 2026 All Rights Reserved by{" "}
                 <Link href={"/"} prefetch={false}>
 jobpath
                 </Link>

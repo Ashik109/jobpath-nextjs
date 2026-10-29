@@ -3,10 +3,13 @@ import path from "node:path";
 
 function files(dir) { return fs.readdirSync(dir, { withFileTypes: true }).flatMap(entry => entry.isDirectory() ? files(path.join(dir, entry.name)) : [path.join(dir, entry.name)]); }
 const authored = [...files("src"), ...files("public")];
-// The standalone template showcase is intentionally served as static HTML.
+// The standalone showcase and documentation are intentionally served as static HTML.
 const landingPage = path.join("public", "landing", "index.html");
-const html = authored.filter(file => /\.html?$/i.test(file) && file !== landingPage);
+const documentationPage = path.join("public", "documentation", "index.html");
+const staticPages = new Set([landingPage, documentationPage]);
+const html = authored.filter(file => /\.html?$/i.test(file) && !staticPages.has(file));
 const missing = new Set();
+if (!fs.existsSync(documentationPage)) missing.add(documentationPage);
 if (!fs.existsSync(landingPage)) missing.add(landingPage);
 else {
   const content = fs.readFileSync(landingPage, "utf8");

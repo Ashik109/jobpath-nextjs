@@ -154,7 +154,7 @@ Looking for your next career opportunity. Look no further
                   </a>
                 </div>
                 <p>
-Copyright © 2024 All Rights Reserved by jobpath
+Copyright © 2026 All Rights Reserved by jobpath
                 </p>
               </div>
             </div>
